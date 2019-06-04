@@ -15,7 +15,7 @@ Read all about this project at: https://medium.com/@mathis.alex/rotationnet-in-f
 
 <b>rNCallbacks.py</b> - needed during inference when using a saved model. Called by startPredictors.py.
 
-<b>startPredictors.py</b> - script that needs to be running in the background when using from Unreal for inference.
+<b>startPredictors.py</b> - script that needs to be running in the background when using Unreal for inference.
 
 
 See https://github.com/kanezaki/pytorch-rotationnet for the official PyTorch implementation of the paper and instructions on how to download and setup the MIRO and ModelNet datasets.
