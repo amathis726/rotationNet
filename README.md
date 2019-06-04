@@ -11,7 +11,7 @@ Read all about this project at: https://medium.com/@mathis.alex/rotationnet-in-f
 
 <b>rotationNet-fastai.ipynb</b> - jupyter notebook that trains and predicts using the ModelNet40 dataset.
 
-<b>rotationNet-fastai-expansion</b> - added a new chair class to the MIRO dataset and uses resnet18 as the backbone. Best results: 96.07% class prediction accuracy, 77.32% pose estimate accuracy, 92.01% pose "precision" (pose estimate was only one rotation off from gt).
+<b>rotationNet-expansion</b> - added a new chair class to the MIRO dataset and uses resnet18 as the backbone. Best results: 96.07% class prediction accuracy, 77.32% pose estimate accuracy, 92.01% pose "precision" (pose estimate was only one rotation off from gt).
 
 <b>rNCallbacks.py</b> - needed during inference when using a saved model. Called by startPredictors.py.
 
