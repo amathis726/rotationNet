@@ -7,11 +7,12 @@ Read all about this project at: https://medium.com/@mathis.alex/rotationnet-in-f
 
 makeDataSubSet.py - creates a smaller dataset for quicker training and iteration.
 
-render_shaded_black_bg.blend - blender script for creating your own datasets.
-
 rotationNet-fastai-MIRO.ipynb - jupyter notebook that trains and predicts using the MIRO dataset.
 
 rotationNet-fastai.ipynb - jupyter notebook that trains and predicts using the ModelNet40 dataset.
+
+rotationNet-fastai-expansion - added a new chair class to the MIRO dataset and uses resnet18 as the backbone. Best results: 96.07% class prediction accuracy, 77.32% pose estimate accuracy, 92.01% pose "precision" (pose estimate was only one rotation off from gt).
+
 
 See https://github.com/kanezaki/pytorch-rotationnet for the official PyTorch implementation of the paper and instructions on how to download and setup the MIRO and ModelNet datasets.
 
