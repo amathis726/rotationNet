@@ -13,6 +13,10 @@ rotationNet-fastai.ipynb - jupyter notebook that trains and predicts using the M
 
 rotationNet-fastai-expansion - added a new chair class to the MIRO dataset and uses resnet18 as the backbone. Best results: 96.07% class prediction accuracy, 77.32% pose estimate accuracy, 92.01% pose "precision" (pose estimate was only one rotation off from gt).
 
+rNCallbacks.py - needed during inference.
+
+startPredictors.py - script that needs to be running in the background when using from Unreal for inference.
+
 
 See https://github.com/kanezaki/pytorch-rotationnet for the official PyTorch implementation of the paper and instructions on how to download and setup the MIRO and ModelNet datasets.
 
