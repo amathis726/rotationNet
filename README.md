@@ -20,14 +20,14 @@ Read all about this project at: https://medium.com/@mathis.alex/rotationnet-in-f
 
 See https://github.com/kanezaki/pytorch-rotationnet for the official PyTorch implementation of the paper and instructions on how to download and setup the MIRO and ModelNet datasets.
 
-Note: Because of RotationNet's specific requirements I had to change a few lines in fast.ai's source code. RotationNet needs further processing on the target tensor before calculating loss, so in callback.py I updated the 'last_target' entry of the state dictionary when the callback handler calls on_loss_begin:
+Note: Because of RotationNet's specific requirements I had to change a few lines in fast.ai's source code. RotationNet needs further processing on the target tensor before calculating loss, so in <b>callback.py</b> I updated the 'last_target' entry of the state dictionary when the callback handler calls "on_loss_begin":
 
 <p align="center">
-<b>Image</b>  <img src="callbacks_changes.png" width="300px"><br>
+<img src="callbacks_changes.png" width="700px"><br>
 </p>
 
-In basic_train.py I changed the loss_batch function so that the target tensor gets updated at the same time as the CNN output, right before loss calculation:
+In <b>basic_train.py</b> I changed the loss_batch function so that the target tensor gets updated at the same time as the CNN output, right before loss calculation:
 
 <p align="center">
-<b>Image</b>  <img src="basic_train_changes.png" width="300px"><br>
+<img src="basic_train_changes.png" width="800px"><br>
 </p>
