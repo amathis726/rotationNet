@@ -13,7 +13,7 @@ Read all about this project at: https://medium.com/@mathis.alex/rotationnet-in-f
 
 <b>rotationNet-fastai-expansion</b> - added a new chair class to the MIRO dataset and uses resnet18 as the backbone. Best results: 96.07% class prediction accuracy, 77.32% pose estimate accuracy, 92.01% pose "precision" (pose estimate was only one rotation off from gt).
 
-<b>rNCallbacks.py</b> - needed during inference.
+<b>rNCallbacks.py</b> - needed during inference when using a saved model. Called by startPredictors.py.
 
 <b>startPredictors.py</b> - script that needs to be running in the background when using from Unreal for inference.
 
